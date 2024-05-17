@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,25 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'matomo';
+
+  constructor(private router: Router){
+
+  }
+
+   firstClick(){
+      this.router.navigate(["/tracker1"]);
+   }
+
+   secondClick(){
+    this.router.navigate(["/tracker2"]);
+   }
+
+   thirdClick(){
+    this.router.navigate(["/tracker3"]);
+   }
+
+   fourthClick(){
+    this.router.navigate(["/tracker4"]);
+   }
+
 }
