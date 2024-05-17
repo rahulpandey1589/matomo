@@ -21,4 +21,8 @@ export class AppComponent implements OnInit{
     // With custom page title
     this.tracker.trackPageView('App Component');
   }
+
+  clickEvnt():void{
+    this.tracker.enableFileTracking();
+  }
 }

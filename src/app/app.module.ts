@@ -23,7 +23,9 @@ import { withRouter } from 'ngx-matomo-client';
     MatomoModule.forRoot({
         siteId:"1",
         trackerUrl:"https://diversityapps.matomo.cloud/matamo/php",
-        scriptUrl:"https://cdn.matomo.cloud/diversityapps.matomo.cloud/matomo.js"
+        scriptUrl:"https://cdn.matomo.cloud/diversityapps.matomo.cloud/matomo.js",
+        enableLinkTracking:true,
+        trackAppInitialLoad:true
     }),
     MatomoRouterModule, 
   ],
